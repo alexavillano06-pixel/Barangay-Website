@@ -1,0 +1,228 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+
+nav {
+    background: #006400;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 90vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .45);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* About Section */
+
+.about {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.about h2 {
+    color: #006400;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+
+
+/* Main Community Container */
+
+.community-container {
+    background: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+
+/* Highlight Section */
+
+.highlight-section {
+    background: #006400;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.highlight-section b {
+    display: block;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.highlight-section b:first-child {
+    color: gold;
+}
+
+
+/* Facebook Section */
+
+.facebook-section {
+    padding: 10px;
+}
+
+.facebook-section p {
+    font-size: 18px;
+    color: #333;
+}
+
+.facebook-section a {
+    color: #1877F2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.facebook-section a:hover {
+    color: #0d5fc1;
+    text-decoration: underline;
+}
+
+.facebook-section i {
+    color: #1877F2;
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+}
